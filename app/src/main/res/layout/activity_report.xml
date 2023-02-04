@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/th"
+    tools:context=".Activity.report">
+
+    <Button
+        android:id="@+id/btnforreport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="37dp"
+        android:backgroundTint="#151111"
+        android:text="view"
+        app:layout_constraintBottom_toTopOf="@+id/report_listview"
+        app:layout_constraintStart_toStartOf="@+id/edittxtfordate"
+        app:layout_constraintTop_toBottomOf="@+id/edittxtfordate" />
+
+    <EditText
+        android:id="@+id/edittxtfordate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="83dp"
+        android:ems="10"
+        android:hint="enter date"
+        android:inputType="textPersonName"
+        android:textColor="#EAE4E4"
+        android:textColorHint="#EFE9E9"
+        app:layout_constraintBottom_toTopOf="@+id/btnforreport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/report_listview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="37dp"
+        android:cacheColorHint="#EFEDED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnforreport" />
+</androidx.constraintlayout.widget.ConstraintLayout>

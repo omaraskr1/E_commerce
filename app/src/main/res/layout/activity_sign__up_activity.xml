@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/th"
+    tools:context=".Activity.SignUp">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guid2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <EditText
+        android:id="@+id/name_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Name"
+        android:textColor="#EFE8E8"
+        android:textColorHint="#ECE2E2"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/guid2"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <EditText
+        android:id="@+id/username_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Username"
+        android:textColor="#ECE4E4"
+        android:textColorHint="#E1DADA"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/name_signup"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <EditText
+        android:id="@+id/password_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#F3E8E8"
+        android:textColorHint="#F8F0F0"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/username_signup"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <TextView
+        android:id="@+id/birthdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="BirthDate"
+        android:textColor="@color/card_bg_color"
+        android:textColorHint="#E1D9D9"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_signup" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Set your birthdate"
+        android:inputType="number"
+        android:textColor="#ECE9E9"
+        android:textColorHint="#E8DCDC"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toEndOf="@+id/birthdate"
+        app:layout_constraintTop_toBottomOf="@+id/password_signup" />
+
+
+    <EditText
+        android:id="@+id/jop_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Jop title"
+        android:textColor="#DDD6D6"
+        android:textColorHint="#F8EEEE"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/birthdate"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <TextView
+        android:id="@+id/gender_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:text="Gender"
+        android:textColor="@color/card_bg_color"
+        android:textColorHint="#F4EEEE"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jop_signup" />
+
+    <Spinner
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/GenderArray"
+        android:padding="10dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/gender_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gender_title"
+        app:layout_constraintTop_toBottomOf="@+id/jop_signup" />
+
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:backgroundTint="#0C0707"
+        android:text="Sign Up"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@+id/gender_title"
+        tools:layout_editor_absoluteX="40dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

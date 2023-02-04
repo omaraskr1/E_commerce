@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/th"
+
+    tools:context=".Activity.Admin_main">
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="9dp"
+        android:backgroundTint="#131212"
+        android:text="add product and category"
+        app:layout_constraintBottom_toTopOf="@+id/button_showallboo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReport2" />
+
+    <Button
+        android:id="@+id/button2searc"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="#121111"
+        android:text="edit product or category"
+        app:layout_constraintBottom_toTopOf="@+id/btnForFeedbacks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_showallboo2" />
+
+    <Button
+        android:id="@+id/button_showallboo2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#100D0D"
+        android:text="delete product or category"
+        app:layout_constraintBottom_toTopOf="@+id/button2searc"
+        app:layout_constraintEnd_toEndOf="@+id/btnadd"
+        app:layout_constraintStart_toStartOf="@+id/button2searc"
+        app:layout_constraintTop_toBottomOf="@+id/btnadd" />
+
+    <TextView
+        android:id="@+id/textVie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:layout_marginBottom="44dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:lineSpacingExtra="8sp"
+        android:text="ADMIN INTERFACE"
+        android:textAlignment="center"
+        android:textColor="@color/card_bg_color"
+        android:textDirection="firstStrongRtl"
+        android:textIsSelectable="true"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/btnReport2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnchart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="43dp"
+        android:backgroundTint="@color/black"
+        android:hapticFeedbackEnabled="false"
+        android:text="chart"
+        app:layout_constraintBottom_toBottomOf="@+id/btnReport2"
+        app:layout_constraintEnd_toStartOf="@+id/btnReport2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnReport2" />
+
+    <Button
+        android:id="@+id/btnForFeedbacks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="78dp"
+        android:backgroundTint="@color/black"
+        android:text="view feedbacks"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2searc" />
+
+    <Button
+        android:id="@+id/btnReport2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="21dp"
+        android:backgroundTint="@color/black"
+        android:text="report"
+        app:layout_constraintBottom_toTopOf="@+id/btnadd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnchart"
+        app:layout_constraintTop_toBottomOf="@+id/textVie" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

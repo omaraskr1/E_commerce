@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/th"
+    tools:context=".Activity.RecoverPass">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guid11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <EditText
+        android:id="@+id/mail_recovery_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="Enter your User Name"
+        android:textColor="#EFE6E6"
+        android:textColorHint="#F6F5F5"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/guid11"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <Button
+        android:id="@+id/load_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="#090707"
+        android:padding="12dp"
+        android:text="get password"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mail_recovery_pass" />
+
+    <TextView
+        android:id="@+id/pass_recovered"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:textColor="#ECE4E4"
+        android:textColorHint="#ECDEDE"
+        android:textSize="19sp"
+        app:layout_constraintTop_toBottomOf="@+id/load_pass"
+        tools:layout_editor_absoluteX="20dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
